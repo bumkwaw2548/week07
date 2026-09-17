@@ -45,3 +45,22 @@ for (let i = 0; i < prices.length; i++) {
 document.write("<h2>3. Cart Total</h2>");
 document.write("<p>Prices: " + prices + "</p>");
 document.write("<p>Cart total: $" + cartTotal.toFixed(2) + "</p>");
+
+// Discount function
+// This function calculates the discount amount.
+function calculateDiscount(amount, percentage) {
+    let discount = amount * (percentage / 100);
+    return discount;
+}
+
+let shoppingAmount = 800;
+let discountPercent = 10;
+
+let discountAmount = calculateDiscount(shoppingAmount, discountPercent);
+let finalAmount = shoppingAmount - discountAmount;
+
+document.write("<h2>4. Discount Function</h2>");
+document.write("<p>Amount: $" + shoppingAmount.toFixed(2) + "</p>");
+document.write("<p>Discount: " + discountPercent + "%</p>");
+document.write("<p>Discount amount: $" + discountAmount.toFixed(2) + "</p>");
+document.write("<p>Final amount: $" + finalAmount.toFixed(2) + "</p>");
