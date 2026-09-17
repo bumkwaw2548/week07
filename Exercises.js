@@ -64,3 +64,27 @@ document.write("<p>Amount: $" + shoppingAmount.toFixed(2) + "</p>");
 document.write("<p>Discount: " + discountPercent + "%</p>");
 document.write("<p>Discount amount: $" + discountAmount.toFixed(2) + "</p>");
 document.write("<p>Final amount: $" + finalAmount.toFixed(2) + "</p>");
+
+// Product object
+// Build an array of product objects and print each name and price.
+let products = [
+    {
+        name: "Laptop",
+        price: 1000
+    },
+    {
+        name: "Mouse",
+        price: 25
+    },
+    {
+        name: "Keyboard",
+        price: 45
+    }
+];
+
+document.write("<h2>5. Product Object</h2>");
+
+for (let i = 0; i < products.length; i++) {
+    document.write("<p>Product: " + products[i].name + "</p>");
+    document.write("<p>Price: $" + products[i].price.toFixed(2) + "</p>");
+}
