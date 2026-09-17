@@ -32,3 +32,16 @@ if (orderTotal >= 500) {
 document.write("<h2>2. Delivery Rule</h2>");
 document.write("<p>Order total: $" + orderTotal.toFixed(2) + "</p>");
 document.write("<p>Delivery fee: $" + deliveryFee.toFixed(2) + "</p>");
+
+// Cart total
+// Loop through an array of prices and sum them.
+let prices = [100, 50, 75, 25];
+let cartTotal = 0;
+
+for (let i = 0; i < prices.length; i++) {
+    cartTotal += prices[i];
+}
+
+document.write("<h2>3. Cart Total</h2>");
+document.write("<p>Prices: " + prices + "</p>");
+document.write("<p>Cart total: $" + cartTotal.toFixed(2) + "</p>");
