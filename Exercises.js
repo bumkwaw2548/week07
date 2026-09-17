@@ -15,3 +15,20 @@ document.write("<p>Quantity: " + quantity + "</p>");
 document.write("<p>Subtotal: $" + subtotal.toFixed(2) + "</p>");
 document.write("<p>VAT 7%: $" + vatAmount.toFixed(2) + "</p>");
 document.write("<p>Total: $" + total.toFixed(2) + "</p>");
+
+// Delivery rule
+// Use if / else if / else to decide the delivery charge.
+let orderTotal = 450;
+let deliveryFee;
+
+if (orderTotal >= 500) {
+    deliveryFee = 0;
+} else if (orderTotal >= 300) {
+    deliveryFee = 30;
+} else {
+    deliveryFee = 50;
+}
+
+document.write("<h2>2. Delivery Rule</h2>");
+document.write("<p>Order total: $" + orderTotal.toFixed(2) + "</p>");
+document.write("<p>Delivery fee: $" + deliveryFee.toFixed(2) + "</p>");
