@@ -88,3 +88,6 @@ for (let i = 0; i < products.length; i++) {
     document.write("<p>Product: " + products[i].name + "</p>");
     document.write("<p>Price: $" + products[i].price.toFixed(2) + "</p>");
 }
+
+
+// AI Log: AI helped me understand the assignment and check my JavaScript code.
